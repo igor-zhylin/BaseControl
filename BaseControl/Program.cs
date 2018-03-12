@@ -22,7 +22,8 @@ namespace BaseControl
            // input = Console.ReadLine();
             Parser parser = new Parser(input);
 
-            parser.Parse();
+            Console.WriteLine("Biggest City Is : " 
+                   + parser.GetBiggestCity());
 
             Console.ReadKey();
             //Output example:

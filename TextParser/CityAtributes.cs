@@ -8,15 +8,19 @@ namespace TextParser
 {
     public class CityAtributes
     {
-        public string Name { get; private set; }
-        public int Population { get; private set; }
-        public int NameSize { get; private set; }
+        public string Name { get;  set; }
+        public int Population { get;  set; }
+        // public int NameSize { get; private set; }
 
-        public CityAtributes(string name, int population, int namesize)
+        public CityAtributes() { }
+        public CityAtributes(string name, int population)
         {
             this.Name = name;
             this.Population = population;
-            this.NameSize = namesize;
+        }
+        public override string ToString()
+        {
+            return Name + " " + Population;
         }
     }
 }
